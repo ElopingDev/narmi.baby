@@ -1,0 +1,145 @@
+@font-face {
+    font-family: 'FredokaOne'; 
+    src: url('FredokaOne-Regular.ttf') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    font-family: "FredokaOne", sans-serif;
+    font-weight: bold; 
+    font-size: 15px; 
+    letter-spacing: 1.5px;
+    color: #F599B3;
+    height: 100%; /* Full height for the page */
+    margin: 0; /* Remove default margin */
+    background-image: url("mainbg.png"); 
+    background-size: cover; 
+}
+
+.main-container {
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height for centering */
+}
+
+.mainframe {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align items at the top */
+    align-items: flex-start; /* Align items to the left */
+    width: 700px; /* Width of the frame */
+    height: 550px; /* Height of the frame */
+    background-color: white;
+    box-shadow: 0 0 60px 2px rgba(221, 143, 164, 1.5);
+    border-radius: 10px;
+    padding: 20px; /* Padding inside the mainframe */
+}
+
+.namebox {
+    margin-top: 20px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between children */
+    width: 100%; /* Full width */
+    align-items: flex-start; /* Align items at the top */
+}
+
+.name-username-container {
+    display: flex;
+    flex-direction: column; 
+    margin-left: 20px; 
+    align-items: flex-start; /* Align items to the left */
+}
+
+#name {
+    font-size: 30px;
+    margin: 0; /* Adjust margin as needed */
+}
+
+.image-container {
+    display: flex; /* Use flexbox to arrange images in a row */
+    gap: 10px; /* Tiny spacing between images */
+    margin-top: 10px; /* Optional: space above the images */
+}
+
+.profile-image {
+    width: 125px; /* Set width of each image */
+    height: 125px; /* Set height of each image */
+    object-fit: cover; /* Ensures the images maintain their aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.paragraphs-container {
+    display: flex;
+    flex-direction: column; 
+    margin-left: -370px; 
+    align-items: flex-start; /* Align items to the left */
+    margin-top: 235px; /* Space above the paragraphs */
+}
+
+#title1 {
+    font-size: 30px;
+    margin-bottom: -15px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: px; 
+    align-items: flex-start; /* Align description similarly */
+}
+
+#about {
+    font-size: 30px;
+    margin: 0px; /* Ensure no extra vertical space */
+}
+
+.second-image-container {
+    display: flex; /* Use flexbox to arrange images in a row */
+    gap: 10px; /* Tiny spacing between images */
+    margin-top: 10px; /* Optional: space above the images */
+}
+
+.second-profile-image {
+    width: 125px; /* Set width of each image */
+    height: 125px; /* Set height of each image */
+    object-fit: cover; /* Ensures the images maintain their aspect ratio */
+    border-radius: 10px; /* Optional: rounded corners */
+}
+
+.divider {
+    border: none; /* Remove default border */
+    border-top: 4px dashed #F599B3; /* Dashed top border */
+    width: 100%; /* Full width */
+    margin: 5px 0; /* Adjust margin for spacing */
+}
+
+.social-media-container {
+    display: flex; /* Arrange buttons in a row */
+    gap: 15px; /* Space between buttons */
+}
+
+.social-button {
+    margin-top: 20px;
+    margin-left: 20px;
+    gap: 8px;
+    width: 50px; /* Button width */
+    height: 50px; /* Button height */
+    border-radius: 50%; /* Circular shape */
+    background-color: #F599B3; /* Pink background */
+    display: flex; /* Center icon */
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    color: white; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.social-button:hover {
+    background-color: #E86A9D; /* Darker pink on hover */
+}
+
+.social-button i {
+    font-size: 24px; /* Icon size */
+}
